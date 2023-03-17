@@ -1,4 +1,4 @@
--- 1633584323-CreateSchema.sql
+-- 1679088541-CreateSchema.sql
 
 -- Autor: Héctor Trujillo Méndez.
 -- Objetivo: Creación de un esquema de Base de Datos para objetos de Base de Datos, si no existen previamente.
@@ -9,4 +9,4 @@ IF NOT EXISTS (SELECT * FROM sys.schemas t1 WHERE (t1.Name = N'Sample') )
 	EXEC('CREATE SCHEMA [Sample] AUTHORIZATION [dbo];');
 GO
 
--- 1633584323-CreateSchema.sql
+-- 1679088541-CreateSchema.sql

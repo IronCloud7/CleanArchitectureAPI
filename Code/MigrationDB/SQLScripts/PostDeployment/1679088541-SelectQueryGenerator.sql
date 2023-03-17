@@ -1,6 +1,6 @@
-﻿-- 1634091036-SelectQueryGenerator.sql
+﻿-- 1679088541-SelectQueryGenerator.sql
 
--- Autor: Olimpo Bonilla Ramírez.
+-- Autor: Héctor Trujillo Méndez.
 -- Objetivo: Query generador de columnas y atributos para compatibilidad de atributos de SQL Server a .NET Core.
 -- Fecha: 2021-10-12.
 -- Comentarios: Si se maneja en SQL Server, usar especificamente este script.
@@ -110,4 +110,4 @@ SELECT So.Id,
 SELECT * FROM @mtObjetos;
 
 
--- 1634091036-SelectQueryGenerator.sql
+-- 1679088541-SelectQueryGenerator.sql
