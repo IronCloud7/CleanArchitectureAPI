@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CA.MigratorDB
+namespace CA.MigratorDB.Main
 {
     [Serializable]
     public class ConnectionStringCollection

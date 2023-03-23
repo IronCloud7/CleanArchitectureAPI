@@ -5,7 +5,7 @@
 		<TargetFramework>net7.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<AssemblyName>CA.MigratorDB.Program</AssemblyName>
+		<AssemblyName>CA.MigratorDB</AssemblyName>
 		<RootNamespace>CA.MigratorDB</RootNamespace>
 
 		<!-- Información del ensamblado. -->
@@ -33,7 +33,7 @@
 		<GenerateAssemblyProductAttribute>true</GenerateAssemblyProductAttribute>
 		<GenerateAssemblyCopyrightAttribute>true</GenerateAssemblyCopyrightAttribute>
 		<GenerateAssemblyVersionAttribute>true</GenerateAssemblyVersionAttribute>
-		<StartupObject>CA.MigratorDB.Program</StartupObject>
+		<StartupObject>CA.MigratorDB.Main.Program</StartupObject>
 	</PropertyGroup>
 
 	<!-- Carpetas y archivos adicionales que se deben de publicar cuando es modo Debug o Release. -->

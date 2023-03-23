@@ -9,7 +9,7 @@ using DbUp;
 using DbUp.Engine;
 using DbUp.Support;
 
-namespace CA.MigratorDB
+namespace CA.MigratorDB.Main
 {
     public class App
     {
@@ -22,7 +22,8 @@ namespace CA.MigratorDB
             try
             {
                 /* Inicio de la tarea asíncrona. */
-                await Task.Run(() => {
+                await Task.Run(() =>
+                {
                     /* Cadena de conexión a la Base de Datos tomada desde el archivo AppConfig.json. */
                     var connectionString = _settings.ConnectionStringSQLServer;
 

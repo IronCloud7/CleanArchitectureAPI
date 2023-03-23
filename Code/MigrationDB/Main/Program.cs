@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CA.MigratorDB
+namespace CA.MigratorDB.Main
 {
     class Program
     {
@@ -26,10 +26,10 @@ namespace CA.MigratorDB
         private static IServiceCollection ConfigureServices()
         {
             IServiceCollection services = new ServiceCollection();
-           
+
             var config = LoadConfiguration();
             services.AddSingleton(config);
-            
+
             /* Lectura de opciones del archivo de configuración. */
             services.Configure<ConnectionStringCollection>(options => config.GetSection($"CollectionConnectionStrings").Bind(options));
 
