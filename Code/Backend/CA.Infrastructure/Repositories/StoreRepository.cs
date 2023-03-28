@@ -11,16 +11,15 @@ namespace CA.Infrastructure.Repositories
 
         public StoreRepository(PatosaDbContext patosaDbContext) => _context = patosaDbContext;
 
-        public async Task<MtStore> GetStoreAsync(int id)
+        public async Task<Store> GetStoreAsync(int id)
         {
-            var store = await _context.MtStore.FirstOrDefaultAsync(x => x.StoreId == id);
+            var store = await _context.Stores.FirstOrDefaultAsync(x => x.StoreId == id);
             return store;
         }
 
-        public async Task<IEnumerable<MtStore>> GetStoresAsync()
+        public async Task<IEnumerable<Store>> GetStoresAsync()
         {
-            var stores = await _context.MtStore.ToListAsync();
-
+            var stores = await _context.Stores.ToListAsync();
             return stores;
         }
     }

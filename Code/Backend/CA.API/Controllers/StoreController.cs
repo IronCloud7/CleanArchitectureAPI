@@ -1,5 +1,4 @@
 ﻿using CA.Core.Interfaces;
-using CA.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CA.API.Controllers

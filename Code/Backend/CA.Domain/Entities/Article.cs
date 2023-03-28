@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿namespace CA.Core.Entities;
 
-namespace CA.Core.Entities;
-
-public partial class MtArticle
+public partial class Article
 {
     public int SkuId { get; set; }
 
@@ -27,9 +24,9 @@ public partial class MtArticle
 
     public DateTime? Updatedate { get; set; }
 
-    public virtual MtUser Account { get; set; } = null!;
+    public virtual User Account { get; set; } = null!;
 
-    public virtual MtProductType Producttype { get; set; } = null!;
+    public virtual ProductType Producttype { get; set; } = null!;
 
-    public virtual MtStore Store { get; set; } = null!;
+    public virtual Store Store { get; set; } = null!;
 }

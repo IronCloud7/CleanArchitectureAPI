@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿namespace CA.Core.DTO;
 
-namespace CA.Core.Entities;
-
-public partial class MtStore
+public partial class StoreDTO
 {
     public int StoreId { get; set; }
 
@@ -16,8 +13,4 @@ public partial class MtStore
     public DateTime Creationdate { get; set; }
 
     public DateTime? Updatedate { get; set; }
-
-    public virtual MtUser Account { get; set; } = null!;
-
-    public virtual ICollection<MtArticle> MtArticles { get; } = new List<MtArticle>();
 }

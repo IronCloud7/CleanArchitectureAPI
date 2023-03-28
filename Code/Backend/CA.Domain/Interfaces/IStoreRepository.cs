@@ -4,7 +4,7 @@ namespace CA.Core.Interfaces
 {
     public interface IStoreRepository
     {
-        Task<IEnumerable<MtStore>> GetStoresAsync();
-        Task<MtStore> GetStoreAsync(int id);
+        Task<IEnumerable<Store>> GetStoresAsync();
+        Task<Store> GetStoreAsync(int id);
     }
 }

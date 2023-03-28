@@ -11,15 +11,21 @@ namespace CA.Infrastructure.Repositories
 
         public ArticleRepository(PatosaDbContext patosaDbContext) => _context = patosaDbContext;
 
-        public async Task<MtArticle> GetArticleAsync(int id)
+        public async Task AddArticle(Article article)
         {
-            var article = await _context.MtArticles.FirstOrDefaultAsync(x => x.SkuId == id);
+            _context.Add(article);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<Article> GetArticleAsync(int id)
+        {
+            var article = await _context.Articles.FirstOrDefaultAsync(x => x.SkuId == id);
             return article;
         }
 
-        public async Task<IEnumerable<MtArticle>> GetArticlesAsync()
+        public async Task<IEnumerable<Article>> GetArticlesAsync()
         {
-            var articles = await _context.MtArticles.ToListAsync();
+            var articles = await _context.Articles.ToListAsync();
             return articles;
         }
     }
